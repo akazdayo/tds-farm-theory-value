@@ -1,9 +1,9 @@
 {
     "player": 2,
     "difficulty": "Fallen",
-    "money": 15745,
+    "money": 9845,
     "wave": 13,
-    "level": 4,
+    "level": 3,
     "graph": {
         "0": {
             "first_money": 600,
@@ -26,134 +26,122 @@
         },
         "2": {
             "first_money": 355,
-            "money": 105,
-            "spend": -250,
+            "money": 155,
+            "spend": -200,
             "farm": [
-                0,
-                0,
+                1,
                 0,
                 0
             ]
         },
         "3": {
-            "first_money": 470,
-            "money": 20,
-            "spend": -450,
+            "first_money": 520,
+            "money": -230,
+            "spend": -750,
             "farm": [
                 2,
-                0,
-                0,
+                1,
                 0
             ]
         },
         "4": {
-            "first_money": 610,
+            "first_money": 360,
             "money": 160,
-            "spend": -450,
+            "spend": -200,
             "farm": [
                 2,
-                2,
-                0,
-                0
+                1,
+                1
             ]
         },
         "5": {
-            "first_money": 975,
-            "money": 75,
-            "spend": -900,
+            "first_money": 825,
+            "money": -275,
+            "spend": -1100,
             "farm": [
-                2,
                 2,
                 2,
                 2
             ]
         },
         "6": {
-            "first_money": 1315,
-            "money": 215,
-            "spend": -1100,
+            "first_money": 715,
+            "money": -285,
+            "spend": -1000,
             "farm": [
-                3,
                 3,
                 2,
                 2
             ]
         },
         "7": {
-            "first_money": 1980,
-            "money": 430,
-            "spend": -1550,
+            "first_money": 980,
+            "money": -20,
+            "spend": -1000,
             "farm": [
-                4,
                 3,
                 3,
                 2
             ]
         },
         "8": {
-            "first_money": 2720,
-            "money": 170,
-            "spend": -2550,
+            "first_money": 1520,
+            "money": 520,
+            "spend": -1000,
             "farm": [
-                4,
-                4,
-                4,
+                3,
+                3,
                 3
             ]
         },
         "9": {
-            "first_money": 3235,
-            "money": 2235,
-            "spend": -1000,
+            "first_money": 2335,
+            "money": 2335,
+            "spend": 0,
             "farm": [
-                4,
-                4,
-                4,
-                4
+                3,
+                3,
+                3
             ]
         },
         "10": {
-            "first_money": 5575,
-            "money": 5575,
+            "first_money": 4175,
+            "money": 4175,
             "spend": 0,
             "farm": [
-                4,
-                4,
-                4,
-                4
+                3,
+                3,
+                3
             ]
         },
         "11": {
-            "first_money": 8940,
-            "money": 8940,
+            "first_money": 6040,
+            "money": 6040,
             "spend": 0,
             "farm": [
-                4,
-                4,
-                4,
-                4
+                3,
+                3,
+                3
             ]
         },
         "12": {
-            "first_money": 12330,
-            "money": 12330,
+            "first_money": 7930,
+            "money": 7930,
             "spend": 0,
             "farm": [
-                4,
-                4,
-                4,
-                4
+                3,
+                3,
+                3
             ]
         },
         "13": {
-            "first_money": 15745,
-            "money": 15745,
+            "first_money": 9845,
+            "money": 9845,
             "spend": 0,
             "farm": [
-                4,
-                4,
-                4,
-                4
+                3,
+                3,
+                3
             ]
         }
     }
