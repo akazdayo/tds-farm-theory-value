@@ -10,40 +10,36 @@ def get_money(wave, players, farms):
     # print(all_bonus)
     return all_bonus
 
+player = 3
+max_wave = 13
+max_level = 5
+max_farm = 8
 
 level = {0: [250, 50], 1: [200, 100], 2: [550, 250], 3: [1000, 500], 4: [2500, 750], 5: [5000, 1500]}
-player = 2
 highest = {"player": player, "difficulty": "Fallen", "money": 0, "wave": 0, "level": 0, "graph": None}
-"""
-money = 600
-farm = []
 
-max_farm = 8
-max_level = 5
-max_wave = 13
-"""
 
-for max_wave in range(14):
-    for max_level in range(5):
-        for max_farm in range(8):
+for current_wave in range(max_wave+1):
+    for current_level in range(max_level):
+        for current_farm in range(max_farm):
             money = 600
             farm = []
-            graph = {i: {"first_money":0, "money": 0, "spend": 0, "farm": []} for i in range(max_wave+1)}
-            for w in range(max_wave+1):
+            graph = {i: {"first_money":0, "money": 0, "spend": 0, "farm": []} for i in range(current_wave+1)}
+            for w in range(current_wave+1):
                 if w != 0:
                     money += get_money(w, player, farm)
                 graph[w]["first_money"] = money
                 
-                if len(farm) < max_farm+1:  # place
-                    for i in range((max_farm+1) - len(farm)):
+                if len(farm) < current_farm+1:  # place
+                    for i in range((current_farm+1) - len(farm)):
                         if money >= 250:
                             farm.append(0)
                             money -= 250
                             graph[w]["spend"] -= 250
 
                 else:  # upgrade
-                    for j in range(max_farm+1):
-                        for i in range(max_level+1):
+                    for j in range(current_farm+1):
+                        for i in range(current_level+1):
                             if i in farm and money >= level[i][0]:
                                 farm[farm.index(i)] += 1
                                 money -= level[i][0]
@@ -53,8 +49,8 @@ for max_wave in range(14):
 
             if highest["money"] < money:
                 highest["money"] = money
-                highest["wave"] = max_wave
-                highest["level"] = max_level+1
+                highest["wave"] = current_wave
+                highest["level"] = current_level+1
                 highest["graph"] = graph
 
 
